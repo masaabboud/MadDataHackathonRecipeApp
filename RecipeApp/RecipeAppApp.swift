@@ -1,6 +1,6 @@
 //
-//  RecipeAppApp.swift
-//  RecipeApp
+//  Recipe_AppApp.swift
+//  Recipe App
 //
 //  Created by Masa Abboud on 2/22/25.
 //
@@ -8,10 +8,20 @@
 import SwiftUI
 
 @main
-struct RecipeAppApp: App {
+struct Recipe_AppApp: App {
+    @AppStorage("isOnboardingShowing") private var isOnboardingShowing = true
+    
+   /* init() {
+            FirebaseApp.configure()
+        }
+    */
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isOnboardingShowing {
+                OnboardingView()
+            } else {
+                HomeView()
+            }
         }
     }
 }

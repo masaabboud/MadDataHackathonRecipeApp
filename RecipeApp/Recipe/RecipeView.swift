@@ -4,6 +4,7 @@
 //
 //  Created by Annie Z on 2/22/25.
 //
+/*
 
 import SwiftUI
 struct RecipeView: View{
@@ -34,3 +35,4 @@ struct RecipeView_Previews: PreviewProvider {
         RecipeView()
     }
 }
+*/

@@ -3,14 +3,13 @@ import SwiftUI
 
 struct GoalsView: View {
     @Binding var currentPage: Int
-    @AppStorage("isOnboardingShowing") var isOnboardingShowing = true
 
     var body: some View {
-        VStack {
-            Text("goals!")
+        VStack(alignment: .center) {
+            
+            Text("Do you have any Dietary Preferences?")
             
             Button(action: {
-                isOnboardingShowing = false
             }) {
                 Text("Done")
                     .foregroundColor(.white)

@@ -7,7 +7,8 @@ struct OnboardingView: View {
         TabView(selection: $currentPage) {
             WelcomeView(currentPage: $currentPage).tag(0)
             SignUpView(currentPage: $currentPage).tag(1)
-            GoalsView(currentPage: $currentPage).tag(2)
+            DietaryPreferenceView(currentPage: $currentPage).tag(2)
+            AllergyPreferenceView(currentPage: $currentPage).tag(3)
         }
     }
 }

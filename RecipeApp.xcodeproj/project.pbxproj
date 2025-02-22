@@ -16,7 +16,6 @@
 		027C88432D6A747700CEC500 /* RecipeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88422D6A747700CEC500 /* RecipeAppUITestsLaunchTests.swift */; };
 		027C88522D6A753900CEC500 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88512D6A753800CEC500 /* OnboardingView.swift */; };
 		027C88542D6A75B500CEC500 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88532D6A75B500CEC500 /* WelcomeView.swift */; };
-		027C88562D6A75D900CEC500 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88552D6A75D900CEC500 /* GoalsView.swift */; };
 		027C88582D6A761000CEC500 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88572D6A761000CEC500 /* SignUpView.swift */; };
 		027C88612D6A77F900CEC500 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C885B2D6A77F900CEC500 /* RecipeView.swift */; };
 		027C88622D6A77F900CEC500 /* recipe_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 027C885C2D6A77F900CEC500 /* recipe_data.csv */; };
@@ -30,6 +29,9 @@
 		D10912382D6A8047004C346C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D10912372D6A8047004C346C /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		D109123A2D6A8047004C346C /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D10912392D6A8047004C346C /* FirebaseAppCheck */; };
 		D109123C2D6A8047004C346C /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D109123B2D6A8047004C346C /* FirebaseAppDistribution-Beta */; };
+		027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88672D6A7A9300CEC500 /* HomeView.swift */; };
+		027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */; };
+		027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C886B2D6A8C4700CEC500 /* AllergiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,6 @@
 		027C88422D6A747700CEC500 /* RecipeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		027C88512D6A753800CEC500 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		027C88532D6A75B500CEC500 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		027C88552D6A75D900CEC500 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		027C88572D6A761000CEC500 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		027C885B2D6A77F900CEC500 /* RecipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		027C885C2D6A77F900CEC500 /* recipe_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recipe_data.csv; sourceTree = "<group>"; };
@@ -70,6 +71,9 @@
 		027C885E2D6A77F900CEC500 /* recipe.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recipe.py; sourceTree = "<group>"; };
 		027C885F2D6A77F900CEC500 /* RunPythonCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunPythonCode.swift; sourceTree = "<group>"; };
 		027C88602D6A77F900CEC500 /* backend.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = backend.py; sourceTree = "<group>"; };
+		027C88672D6A7A9300CEC500 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryPreferenceView.swift; sourceTree = "<group>"; };
+		027C886B2D6A8C4700CEC500 /* AllergiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +172,9 @@
 			children = (
 				027C88512D6A753800CEC500 /* OnboardingView.swift */,
 				027C88532D6A75B500CEC500 /* WelcomeView.swift */,
-				027C88552D6A75D900CEC500 /* GoalsView.swift */,
 				027C88572D6A761000CEC500 /* SignUpView.swift */,
+				027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */,
+				027C886B2D6A8C4700CEC500 /* AllergiesView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 		027C88502D6A74AA00CEC500 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				027C88672D6A7A9300CEC500 /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -339,13 +345,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */,
 				027C88652D6A77F900CEC500 /* RunPythonCode.swift in Sources */,
 				027C88522D6A753900CEC500 /* OnboardingView.swift in Sources */,
-				027C88562D6A75D900CEC500 /* GoalsView.swift in Sources */,
+				027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */,
 				027C88282D6A747400CEC500 /* ContentView.swift in Sources */,
 				027C88612D6A77F900CEC500 /* RecipeView.swift in Sources */,
 				027C88262D6A747400CEC500 /* RecipeAppApp.swift in Sources */,
 				027C88582D6A761000CEC500 /* SignUpView.swift in Sources */,
+				027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */,
 				027C88542D6A75B500CEC500 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

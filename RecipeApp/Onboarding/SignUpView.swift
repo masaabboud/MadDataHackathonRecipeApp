@@ -5,6 +5,7 @@ struct SignUpView: View {
     @Binding var currentPage: Int
     @State private var email = ""
     @State private var password = ""
+    @State private var name = ""
 
     var body: some View {
         VStack() {
@@ -26,6 +27,12 @@ struct SignUpView: View {
                         .padding(.top, 40)
                     
                     VStack(alignment: .leading, spacing: 10) {
+                        Text("Name")
+                            .font(.subheadline)
+                        TextField("", text: $name)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.bottom, 10)
+                        
                         Text("Email")
                             .font(.subheadline)
                         TextField("", text: $email)
@@ -58,7 +65,7 @@ struct SignUpView: View {
                         .foregroundColor(.black)
                 }
                 .padding()
-                .frame(width: 300) // Keep content width smaller than the rectangle
+                .frame(width: 300) 
             }
         }
     }

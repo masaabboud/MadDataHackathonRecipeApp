@@ -17,6 +17,7 @@ struct Recipe_AppApp: App {
                 OnboardingView()
             } else {
                 HomeView()
+                
             }
         }
     }

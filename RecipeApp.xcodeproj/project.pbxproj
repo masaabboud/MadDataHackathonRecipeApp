@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0275F7FA2D6AD1750051DE8E /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275F7F92D6AD1710051DE8E /* RecipeCardView.swift */; };
 		027C88262D6A747400CEC500 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88252D6A747400CEC500 /* RecipeAppApp.swift */; };
 		027C88282D6A747400CEC500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88272D6A747400CEC500 /* ContentView.swift */; };
 		027C882A2D6A747700CEC500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027C88292D6A747700CEC500 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0275F7F92D6AD1710051DE8E /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
 		027C88222D6A747400CEC500 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027C88252D6A747400CEC500 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		027C88272D6A747400CEC500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		02D25EDE2D6AC7240032DF62 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				0275F7F92D6AD1710051DE8E /* RecipeCardView.swift */,
 				02D25EE12D6AC7F00032DF62 /* RecipeView.swift */,
 			);
 			path = Recipes;
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */,
+				0275F7FA2D6AD1750051DE8E /* RecipeCardView.swift in Sources */,
 				027C88652D6A77F900CEC500 /* RunPythonCode.swift in Sources */,
 				027C88522D6A753900CEC500 /* OnboardingView.swift in Sources */,
 				027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */,

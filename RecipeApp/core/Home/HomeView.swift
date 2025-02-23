@@ -2,13 +2,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
                 Text("hungry?")
                     .font(.largeTitle)
                     .bold()
                 
-                NavigationLink(destination: RecipeView()) { // Correct way to navigate
+                NavigationLink(destination: RecipeView()) {
                     Text("Create Recipe")
                         .font(.headline)
                         .padding()
@@ -16,8 +16,7 @@ struct HomeView: View {
                         .background(Color.white)
                         .cornerRadius(20)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.black, lineWidth: 1)
+                            RoundedRectangle(cornerRadius: 20).stroke(Color.black, lineWidth: 1)
                         )
                 }
                 
@@ -59,3 +58,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+

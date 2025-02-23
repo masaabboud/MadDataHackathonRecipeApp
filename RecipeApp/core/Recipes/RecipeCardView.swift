@@ -32,13 +32,6 @@ struct RecipeCardView: View {
                     }
                 }
                 
-                Divider()
-                
-                Text("Nutrition Info:")
-                    .font(.headline)
-                Text(recipe.nutritionInfo)
-                    .font(.body)
-                    .foregroundColor(.gray)
             }
             .padding()
         }
@@ -48,14 +41,3 @@ struct RecipeCardView: View {
     }
 }
 
-struct RecipeCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecipeCardView(recipe: Recipe(
-            name: "Pasta Primavera",
-            ingredients: ["Pasta", "Tomatoes", "Garlic", "Basil", "Olive Oil"],
-            directions: ["Boil pasta", "Sauté tomatoes and garlic", "Mix everything together", "Garnish with basil"],
-            nutritionInfo: "Calories: 500 kcal per serving"
-        ))
-        .background(Color.white.opacity(0.5))
-    }
-}

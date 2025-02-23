@@ -92,17 +92,16 @@ struct RecipeView: View {
         recipe = Recipe(
             name: "Custom Recipe",
             ingredients: ingredients.isEmpty ? ["Ingredient 1", "Ingredient 2"] : ingredients,
-            directions: ["Step 1: Prep ingredients", "Step 2: Cook", "Step 3: Serve"],
-            nutritionInfo: "Calories: 500 kcal"
+            directions: ["Step 1: Prep ingredients", "Step 2: Cook", "Step 3: Serve"]
         )
     }
 }
 
-struct Recipe {
+struct Recipe: Identifiable {
+    let id = UUID()
     let name: String
     let ingredients: [String]
     let directions: [String]
-    let nutritionInfo: String
 }
 
 struct RecipeView_Previews: PreviewProvider {

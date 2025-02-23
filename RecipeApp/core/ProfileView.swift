@@ -8,7 +8,14 @@
 import Foundation
 import SwiftUI
 
-var pastRecipes = ["Pasta", "Pizza", "Salad", "Fried Rice", "Cheeseburger", "Sushi", "Dumplings", "Curry Chicken"]
+var pastRecipes = [
+    Recipe(name: "Tofu Stir Fry", ingredients: ["Tofu", "Bell Peppers", "Pineapple", "Soy Sauce", "Vinegar", "Brown Sugar", "Garlic", "Ginger"], directions: ["Sauté vegetables in a pot", "Add lentils and broth and herbs", "Bring to a boil, then simmer", "Season and serve warm"]),
+    Recipe(name: "Special Burger", ingredients: ["Bun", "Lettuce", "Tomato", "Patty", "Cheese"], directions: ["Toast bun", "Cook patty", "Assemble ingredients", "Serve"]),
+    Recipe(name: "Pasta Primavera", ingredients: ["Pasta", "Tomatoes", "Garlic", "Basil", "Olive Oil"], directions: ["Boil pasta", "Sauté tomatoes and garlic", "Mix everything together", "Garnish with basil"]),
+    Recipe(name: "Avocado Toast", ingredients: ["Bread", "Avocado", "Lemon", "Salt", "Pepper"], directions: ["Toast bread", "Mash avocado", "Spread on toast", "Season to taste"]),
+    Recipe(name: "Healthy Salad", ingredients: ["Lettuce", "Tomato", "Cucumber", "Olives", "Feta Cheese"], directions: ["Chop ingredients", "Mix in a bowl", "Add dressing", "Serve"]),
+    Recipe(name: "Chicken Noodle Soup", ingredients: ["Chicken", "Celery", "Noodles", "Carrots", "Chicken Broth"], directions: ["Sauté carrots and celery", "Add chicken and broth, bring to boil", "Sitr in noodles", "Season and serve"]),
+]
 
 struct ProfileView: View {
     var body: some View {
@@ -43,14 +50,18 @@ struct ProfileView: View {
                             .font(.title3)
                             .padding(.bottom, 5)
                         
-                        List(pastRecipes, id: \.self){ recipe in
-                            Text(recipe)
-                                .font(.headline)
-                                .padding()
-                                .cornerRadius(10)
-                                .padding(.vertical, 5)
+                        ScrollView(.vertical, showsIndicators: true) {
+                            LazyVGrid(columns: [ GridItem(.flexible(), spacing: 5),
+                                GridItem(.flexible(), spacing: 5)], spacing: 1)
+                                                 {
+                                ForEach(pastRecipes) { recipe in
+                                    RecipeComponent(recipe: recipe)
+                                    
+                                }
+                            }
+                            .padding(.horizontal, 5)
                         }
-                        .frame(minHeight: 250)
+
                         Spacer()
                     }
                     .padding()

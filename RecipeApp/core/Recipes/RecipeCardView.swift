@@ -2,10 +2,19 @@ import SwiftUI
 
 struct RecipeCardView: View {
     let recipe: Recipe
-    
+    let preferences: String  // Add preferences string
+
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 10) {
+                Text("Your Prompt:")
+                    .font(.headline)
+                    .foregroundColor(.gray)
+                Text(preferences)
+                    .font(.body)
+                    .italic()
+                    .padding(.bottom, 10)
+                
                 Text(recipe.name)
                     .font(.title)
                     .fontWeight(.bold)

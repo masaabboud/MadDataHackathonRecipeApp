@@ -7,14 +7,10 @@
 
 import SwiftUI
 
+
 @main
 struct Recipe_AppApp: App {
     @AppStorage("isOnboardingShowing") private var isOnboardingShowing = true
-    
-   /* init() {
-            FirebaseApp.configure()
-        }
-    */
     var body: some Scene {
         WindowGroup {
             if isOnboardingShowing {

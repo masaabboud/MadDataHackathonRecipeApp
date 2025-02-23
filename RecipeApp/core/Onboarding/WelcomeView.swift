@@ -5,7 +5,7 @@ struct WelcomeView: View {
     var body: some View{
         VStack{
             Spacer()
-            Text("APP NAME")
+            Text("quickbite")
                 .font(.system(size: 36, weight: .bold))
                 .foregroundColor(.orange)
             Text("Welcome to your personal chef")

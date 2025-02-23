@@ -23,15 +23,16 @@
 		027C88642D6A77F900CEC500 /* recipe.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C885E2D6A77F900CEC500 /* recipe.py */; };
 		027C88652D6A77F900CEC500 /* RunPythonCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C885F2D6A77F900CEC500 /* RunPythonCode.swift */; };
 		027C88662D6A77F900CEC500 /* backend.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C88602D6A77F900CEC500 /* backend.py */; };
+		027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88672D6A7A9300CEC500 /* HomeView.swift */; };
+		027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */; };
+		027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C886B2D6A8C4700CEC500 /* AllergiesView.swift */; };
+		027C887C2D6AAF1000CEC500 /* quickbite.png in Resources */ = {isa = PBXBuildFile; fileRef = 027C887B2D6AAF0F00CEC500 /* quickbite.png */; };
 		D10912312D6A8026004C346C /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = D10912302D6A8026004C346C /* PythonKit */; };
 		D10912342D6A8047004C346C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D10912332D6A8047004C346C /* FirebaseAnalytics */; };
 		D10912362D6A8047004C346C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D10912352D6A8047004C346C /* FirebaseAnalyticsOnDeviceConversion */; };
 		D10912382D6A8047004C346C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D10912372D6A8047004C346C /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		D109123A2D6A8047004C346C /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D10912392D6A8047004C346C /* FirebaseAppCheck */; };
 		D109123C2D6A8047004C346C /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D109123B2D6A8047004C346C /* FirebaseAppDistribution-Beta */; };
-		027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88672D6A7A9300CEC500 /* HomeView.swift */; };
-		027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */; };
-		027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C886B2D6A8C4700CEC500 /* AllergiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		027C88672D6A7A9300CEC500 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryPreferenceView.swift; sourceTree = "<group>"; };
 		027C886B2D6A8C4700CEC500 /* AllergiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesView.swift; sourceTree = "<group>"; };
+		027C887B2D6AAF0F00CEC500 /* quickbite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quickbite.png; path = ../../../../quickbite.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +132,13 @@
 		027C88242D6A747400CEC500 /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				027C88722D6A993700CEC500 /* model */,
+				027C88712D6A992F00CEC500 /* App */,
+				027C88702D6A991F00CEC500 /* core */,
+				027C886F2D6A990D00CEC500 /* Components */,
 				027C885A2D6A76FC00CEC500 /* Recipe */,
 				027C88592D6A76F100CEC500 /* UserProfile */,
 				027C88252D6A747400CEC500 /* RecipeAppApp.swift */,
-				027C88272D6A747400CEC500 /* ContentView.swift */,
-				027C884F2D6A749400CEC500 /* Onboarding */,
-				027C88502D6A74AA00CEC500 /* Home */,
 				027C88292D6A747700CEC500 /* Assets.xcassets */,
 				027C882B2D6A747700CEC500 /* Preview Content */,
 			);
@@ -205,6 +208,62 @@
 				027C885F2D6A77F900CEC500 /* RunPythonCode.swift */,
 			);
 			path = Recipe;
+			sourceTree = "<group>";
+		};
+		027C886F2D6A990D00CEC500 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		027C88702D6A991F00CEC500 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				027C88502D6A74AA00CEC500 /* Home */,
+				027C88762D6AADF200CEC500 /* OnboardingAssets */,
+				027C884F2D6A749400CEC500 /* Onboarding */,
+				027C88752D6A995A00CEC500 /* profile */,
+				027C88732D6A994200CEC500 /* root */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		027C88712D6A992F00CEC500 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		027C88722D6A993700CEC500 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		027C88732D6A994200CEC500 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				027C88272D6A747400CEC500 /* ContentView.swift */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		027C88752D6A995A00CEC500 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		027C88762D6AADF200CEC500 /* OnboardingAssets */ = {
+			isa = PBXGroup;
+			children = (
+				027C887B2D6AAF0F00CEC500 /* quickbite.png */,
+			);
+			path = OnboardingAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				027C88632D6A77F900CEC500 /* PythonPlaceholder.py in Resources */,
+				027C887C2D6AAF1000CEC500 /* quickbite.png in Resources */,
 				027C88622D6A77F900CEC500 /* recipe_data.csv in Resources */,
 				027C882D2D6A747700CEC500 /* Preview Assets.xcassets in Resources */,
 				027C88662D6A77F900CEC500 /* backend.py in Resources */,

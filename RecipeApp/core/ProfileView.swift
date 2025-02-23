@@ -20,7 +20,7 @@ struct ProfileView: View {
                         HStack(alignment: .top, spacing:0){
                             Text("Hello,")
                             Text(" Jane Doe")
-                                .foregroundColor(.orange)
+                                .foregroundColor(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0))
                         }
                         .font(.title)
                         .bold()
@@ -30,7 +30,7 @@ struct ProfileView: View {
                         Spacer()
                         Image(systemName: "person.crop.circle.fill")
                             .resizable()
-                            .foregroundColor(.orange)
+                            .foregroundColor(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0))
                             .frame(width: 80, height: 80)
                             .padding(.trailing, 30)
                     }

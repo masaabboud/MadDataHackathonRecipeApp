@@ -6,18 +6,23 @@ struct DietaryPreferenceView: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
+            
+            Spacer()
+            
             Text("do you have any\ndietary preferences?")
                 .font(.system(size: 30, weight: .bold))
                 .multilineTextAlignment(.leading)
             
-            HStack(spacing: 10) {
+            HStack(spacing: 5) {
                 PreferenceButton(title: "Vegetarian", selected: $selectedPreference)
                 PreferenceButton(title: "Vegan", selected: $selectedPreference)
             }
             
+            
             PreferenceButton(title: "none", selected: $selectedPreference)
             
         
+            Spacer()
             
             Button(action: {
                 withAnimation {
@@ -29,8 +34,8 @@ struct DietaryPreferenceView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.orange)
-                    .cornerRadius(30)
+                    .background(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0)
+                    .cornerRadius(30))
             }
             .padding(.horizontal, 40)
         }
@@ -49,7 +54,7 @@ struct PreferenceButton: View {
             Text(title)
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
-                .background(selected == title ? Color.gray.opacity(0.3) : Color.clear)
+                .background(selected == title ? Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0).opacity(0.3) : Color.clear)
                 .cornerRadius(20)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)

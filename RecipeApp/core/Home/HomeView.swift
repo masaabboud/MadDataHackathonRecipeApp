@@ -14,8 +14,9 @@ struct HomeView: View {
                         .font(.headline)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.white)
+                        .background(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0))
                         .cornerRadius(20)
+                        .foregroundColor(Color.white)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20).stroke(Color.black, lineWidth: 1)
                         )

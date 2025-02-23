@@ -54,7 +54,8 @@ struct SignUpView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.orange)
+                            .background(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0)
+)
                             .cornerRadius(30)
                     }
                     .padding(.top, 10)

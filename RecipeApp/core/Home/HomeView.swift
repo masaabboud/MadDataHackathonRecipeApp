@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
                 Text("hungry?")

@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0275F7FA2D6AD1750051DE8E /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275F7F92D6AD1710051DE8E /* RecipeCardView.swift */; };
+		0275F7FF2D6ADDA60051DE8E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275F7FE2D6ADDA00051DE8E /* LoginView.swift */; };
+		0275F8012D6ADECF0051DE8E /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275F8002D6ADECF0051DE8E /* InputView.swift */; };
 		027C88262D6A747400CEC500 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88252D6A747400CEC500 /* RecipeAppApp.swift */; };
 		027C88282D6A747400CEC500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88272D6A747400CEC500 /* ContentView.swift */; };
 		027C882A2D6A747700CEC500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027C88292D6A747700CEC500 /* Assets.xcassets */; };
@@ -21,7 +23,6 @@
 		027C88622D6A77F900CEC500 /* recipe_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 027C885C2D6A77F900CEC500 /* recipe_data.csv */; };
 		027C88632D6A77F900CEC500 /* PythonPlaceholder.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */; };
 		027C88642D6A77F900CEC500 /* recipe.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C885E2D6A77F900CEC500 /* recipe.py */; };
-		027C88652D6A77F900CEC500 /* RunPythonCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C885F2D6A77F900CEC500 /* RunPythonCode.swift */; };
 		027C88662D6A77F900CEC500 /* backend.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C88602D6A77F900CEC500 /* backend.py */; };
 		027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88672D6A7A9300CEC500 /* HomeView.swift */; };
 		027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */; };
@@ -56,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		0275F7F92D6AD1710051DE8E /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		0275F7FE2D6ADDA00051DE8E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0275F8002D6ADECF0051DE8E /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		027C88222D6A747400CEC500 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027C88252D6A747400CEC500 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		027C88272D6A747400CEC500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +75,6 @@
 		027C885C2D6A77F900CEC500 /* recipe_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recipe_data.csv; sourceTree = "<group>"; };
 		027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = PythonPlaceholder.py; sourceTree = "<group>"; };
 		027C885E2D6A77F900CEC500 /* recipe.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recipe.py; sourceTree = "<group>"; };
-		027C885F2D6A77F900CEC500 /* RunPythonCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunPythonCode.swift; sourceTree = "<group>"; };
 		027C88602D6A77F900CEC500 /* backend.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = backend.py; sourceTree = "<group>"; };
 		027C88672D6A7A9300CEC500 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryPreferenceView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,10 @@
 		D18411F12D6ADC6300B9DFBE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = RecipeApp/core/ProfileView.swift; sourceTree = SOURCE_ROOT; };
 		D18411F32D6ADE4A00B9DFBE /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavBar.swift; path = RecipeApp/core/NavBar.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0275F7FD2D6ADD7B0051DE8E /* UserProfile */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UserProfile; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		027C881F2D6A747400CEC500 /* Frameworks */ = {
@@ -140,9 +146,6 @@
 				027C88712D6A992F00CEC500 /* App */,
 				027C88702D6A991F00CEC500 /* core */,
 				027C886F2D6A990D00CEC500 /* Components */,
-				027C885A2D6A76FC00CEC500 /* Recipe */,
-				027C88592D6A76F100CEC500 /* UserProfile */,
-				027C88252D6A747400CEC500 /* RecipeAppApp.swift */,
 				027C88292D6A747700CEC500 /* Assets.xcassets */,
 				027C882B2D6A747700CEC500 /* Preview Content */,
 			);
@@ -177,9 +180,10 @@
 		027C884F2D6A749400CEC500 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				0275F7FE2D6ADDA00051DE8E /* LoginView.swift */,
+				027C88572D6A761000CEC500 /* SignUpView.swift */,
 				027C88512D6A753800CEC500 /* OnboardingView.swift */,
 				027C88532D6A75B500CEC500 /* WelcomeView.swift */,
-				027C88572D6A761000CEC500 /* SignUpView.swift */,
 				027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */,
 				027C886B2D6A8C4700CEC500 /* AllergiesView.swift */,
 			);
@@ -194,28 +198,10 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		027C88592D6A76F100CEC500 /* UserProfile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserProfile;
-			sourceTree = "<group>";
-		};
-		027C885A2D6A76FC00CEC500 /* Recipe */ = {
-			isa = PBXGroup;
-			children = (
-				027C88602D6A77F900CEC500 /* backend.py */,
-				027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */,
-				027C885C2D6A77F900CEC500 /* recipe_data.csv */,
-				027C885E2D6A77F900CEC500 /* recipe.py */,
-				027C885F2D6A77F900CEC500 /* RunPythonCode.swift */,
-			);
-			path = Recipe;
-			sourceTree = "<group>";
-		};
 		027C886F2D6A990D00CEC500 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0275F8002D6ADECF0051DE8E /* InputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -223,6 +209,7 @@
 		027C88702D6A991F00CEC500 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				0275F7FD2D6ADD7B0051DE8E /* UserProfile */,
 				02D25EDF2D6AC7DD0032DF62 /* Navigation */,
 				02D25EDE2D6AC7240032DF62 /* Recipes */,
 				027C88502D6A74AA00CEC500 /* Home */,
@@ -236,6 +223,7 @@
 		027C88712D6A992F00CEC500 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				027C88252D6A747400CEC500 /* RecipeAppApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -268,6 +256,10 @@
 			children = (
 				0275F7F92D6AD1710051DE8E /* RecipeCardView.swift */,
 				02D25EE12D6AC7F00032DF62 /* RecipeView.swift */,
+				027C88602D6A77F900CEC500 /* backend.py */,
+				027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */,
+				027C885C2D6A77F900CEC500 /* recipe_data.csv */,
+				027C885E2D6A77F900CEC500 /* recipe.py */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -294,6 +286,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0275F7FD2D6ADD7B0051DE8E /* UserProfile */,
 			);
 			name = RecipeApp;
 			productName = RecipeApp;
@@ -418,13 +413,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0275F8012D6ADECF0051DE8E /* InputView.swift in Sources */,
 				027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */,
 				0275F7FA2D6AD1750051DE8E /* RecipeCardView.swift in Sources */,
-				027C88652D6A77F900CEC500 /* RunPythonCode.swift in Sources */,
 				027C88522D6A753900CEC500 /* OnboardingView.swift in Sources */,
 				D18411F22D6ADC6400B9DFBE /* ProfileView.swift in Sources */,
 				027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */,
 				02D25EE22D6AC7F70032DF62 /* RecipeView.swift in Sources */,
+				0275F7FF2D6ADDA60051DE8E /* LoginView.swift in Sources */,
 				027C88282D6A747400CEC500 /* ContentView.swift in Sources */,
 				D18411F42D6ADE4A00B9DFBE /* NavBar.swift in Sources */,
 				027C88262D6A747400CEC500 /* RecipeAppApp.swift in Sources */,

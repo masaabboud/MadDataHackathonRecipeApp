@@ -8,49 +8,27 @@ struct HomeView: View {
                     .font(.largeTitle)
                     .bold()
                 
-                Button(action: {
-                    // Navigate to CreateRecipeView
-                }) {
-                    NavigationLink(destination: CreateRecipeView()) {
-                        Text("make a recipe")
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.white)
-                            .cornerRadius(20)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.black, lineWidth: 1)
-                            )
-                    }
+                NavigationLink(destination: RecipeView()) { // Correct way to navigate
+                    Text("Create Recipe")
+                        .font(.headline)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white)
+                        .cornerRadius(20)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.black, lineWidth: 1)
+                        )
                 }
-                .padding(.vertical)
                 
                 Text("latest recipes")
                     .font(.headline)
+                    .padding(.top, 10)
                 
-                HStack {
-                    NavigationLink(destination: RecipeDetailView(recipe: "Recipe 1")) {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(width: 150, height: 100)
-                    }
-                    NavigationLink(destination: RecipeDetailView(recipe: "Recipe 2")) {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.gray.opacity(0.3))
-                            .frame(width: 150, height: 100)
-                    }
+                HStack(spacing: 15) {
+                    RecipeBoxView(recipeName: "Recipe 1")
+                    RecipeBoxView(recipeName: "Recipe 2")
                 }
-                .padding(.vertical)
-                
-                Text("recipe of the week")
-                    .font(.headline)
-                
-                NavigationLink(destination: RecipeDetailView(recipe: "Featured Recipe")) {
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.gray.opacity(0.3))
-                        .frame(height: 100)
-                }
-                .padding(.vertical)
                 
                 Spacer()
             }
@@ -59,23 +37,25 @@ struct HomeView: View {
     }
 }
 
-struct RecipeDetailView: View {
-    let recipe: String
+struct RecipeBoxView: View {
+    var recipeName: String
     
     var body: some View {
-        Text(recipe)
-            .font(.largeTitle)
-            .bold()
-            .padding()
+        VStack {
+            Rectangle()
+                .fill(Color.gray.opacity(0.3))
+                .frame(width: 100, height: 100)
+                .cornerRadius(10)
+            
+            Text(recipeName)
+                .font(.caption)
+                .foregroundColor(.black)
+        }
     }
 }
 
-struct CreateRecipeView: View {
-    var body: some View {
-        Text("Create a new recipe")
-            .font(.largeTitle)
-            .bold()
-            .padding()
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
     }
 }
-

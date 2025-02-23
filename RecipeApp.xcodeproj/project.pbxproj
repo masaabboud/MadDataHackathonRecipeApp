@@ -17,7 +17,6 @@
 		027C88522D6A753900CEC500 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88512D6A753800CEC500 /* OnboardingView.swift */; };
 		027C88542D6A75B500CEC500 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88532D6A75B500CEC500 /* WelcomeView.swift */; };
 		027C88582D6A761000CEC500 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88572D6A761000CEC500 /* SignUpView.swift */; };
-		027C88612D6A77F900CEC500 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C885B2D6A77F900CEC500 /* RecipeView.swift */; };
 		027C88622D6A77F900CEC500 /* recipe_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 027C885C2D6A77F900CEC500 /* recipe_data.csv */; };
 		027C88632D6A77F900CEC500 /* PythonPlaceholder.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */; };
 		027C88642D6A77F900CEC500 /* recipe.py in Resources */ = {isa = PBXBuildFile; fileRef = 027C885E2D6A77F900CEC500 /* recipe.py */; };
@@ -26,7 +25,7 @@
 		027C88682D6A7A9300CEC500 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88672D6A7A9300CEC500 /* HomeView.swift */; };
 		027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */; };
 		027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027C886B2D6A8C4700CEC500 /* AllergiesView.swift */; };
-		027C887C2D6AAF1000CEC500 /* quickbite.png in Resources */ = {isa = PBXBuildFile; fileRef = 027C887B2D6AAF0F00CEC500 /* quickbite.png */; };
+		02D25EE22D6AC7F70032DF62 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D25EE12D6AC7F00032DF62 /* RecipeView.swift */; };
 		D10912312D6A8026004C346C /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = D10912302D6A8026004C346C /* PythonKit */; };
 		D10912342D6A8047004C346C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D10912332D6A8047004C346C /* FirebaseAnalytics */; };
 		D10912362D6A8047004C346C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D10912352D6A8047004C346C /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -66,7 +65,6 @@
 		027C88512D6A753800CEC500 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		027C88532D6A75B500CEC500 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		027C88572D6A761000CEC500 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		027C885B2D6A77F900CEC500 /* RecipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		027C885C2D6A77F900CEC500 /* recipe_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = recipe_data.csv; sourceTree = "<group>"; };
 		027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = PythonPlaceholder.py; sourceTree = "<group>"; };
 		027C885E2D6A77F900CEC500 /* recipe.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recipe.py; sourceTree = "<group>"; };
@@ -75,7 +73,7 @@
 		027C88672D6A7A9300CEC500 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		027C88692D6A8C1E00CEC500 /* DietaryPreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryPreferenceView.swift; sourceTree = "<group>"; };
 		027C886B2D6A8C4700CEC500 /* AllergiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergiesView.swift; sourceTree = "<group>"; };
-		027C887B2D6AAF0F00CEC500 /* quickbite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quickbite.png; path = ../../../../quickbite.png; sourceTree = "<group>"; };
+		02D25EE12D6AC7F00032DF62 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +202,6 @@
 				027C885D2D6A77F900CEC500 /* PythonPlaceholder.py */,
 				027C885C2D6A77F900CEC500 /* recipe_data.csv */,
 				027C885E2D6A77F900CEC500 /* recipe.py */,
-				027C885B2D6A77F900CEC500 /* RecipeView.swift */,
 				027C885F2D6A77F900CEC500 /* RunPythonCode.swift */,
 			);
 			path = Recipe;
@@ -220,8 +217,9 @@
 		027C88702D6A991F00CEC500 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				02D25EDF2D6AC7DD0032DF62 /* Navigation */,
+				02D25EDE2D6AC7240032DF62 /* Recipes */,
 				027C88502D6A74AA00CEC500 /* Home */,
-				027C88762D6AADF200CEC500 /* OnboardingAssets */,
 				027C884F2D6A749400CEC500 /* Onboarding */,
 				027C88752D6A995A00CEC500 /* profile */,
 				027C88732D6A994200CEC500 /* root */,
@@ -258,12 +256,19 @@
 			path = profile;
 			sourceTree = "<group>";
 		};
-		027C88762D6AADF200CEC500 /* OnboardingAssets */ = {
+		02D25EDE2D6AC7240032DF62 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				027C887B2D6AAF0F00CEC500 /* quickbite.png */,
+				02D25EE12D6AC7F00032DF62 /* RecipeView.swift */,
 			);
-			path = OnboardingAssets;
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		02D25EDF2D6AC7DD0032DF62 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +335,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					027C88212D6A747400CEC500 = {
 						CreatedOnToolsVersion = 14.2;
@@ -375,7 +380,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				027C88632D6A77F900CEC500 /* PythonPlaceholder.py in Resources */,
-				027C887C2D6AAF1000CEC500 /* quickbite.png in Resources */,
 				027C88622D6A77F900CEC500 /* recipe_data.csv in Resources */,
 				027C882D2D6A747700CEC500 /* Preview Assets.xcassets in Resources */,
 				027C88662D6A77F900CEC500 /* backend.py in Resources */,
@@ -409,8 +413,8 @@
 				027C88652D6A77F900CEC500 /* RunPythonCode.swift in Sources */,
 				027C88522D6A753900CEC500 /* OnboardingView.swift in Sources */,
 				027C886C2D6A8C4700CEC500 /* AllergiesView.swift in Sources */,
+				02D25EE22D6AC7F70032DF62 /* RecipeView.swift in Sources */,
 				027C88282D6A747400CEC500 /* ContentView.swift in Sources */,
-				027C88612D6A77F900CEC500 /* RecipeView.swift in Sources */,
 				027C88262D6A747400CEC500 /* RecipeAppApp.swift in Sources */,
 				027C88582D6A761000CEC500 /* SignUpView.swift in Sources */,
 				027C886A2D6A8C1F00CEC500 /* DietaryPreferenceView.swift in Sources */,
@@ -487,6 +491,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -547,6 +552,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -624,7 +630,6 @@
 		027C884A2D6A747700CEC500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,7 +648,6 @@
 		027C884B2D6A747700CEC500 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -662,7 +666,6 @@
 		027C884D2D6A747700CEC500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -679,7 +682,6 @@
 		027C884E2D6A747700CEC500 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

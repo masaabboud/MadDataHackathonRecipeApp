@@ -7,8 +7,8 @@ struct WelcomeView: View {
             Spacer()
             Text("quickbite")
                 .font(.system(size: 36, weight: .bold))
-                .foregroundColor(.orange)
-            Text("Welcome to your personal chef")
+                .foregroundColor(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0))
+            Text("welcome to your personal chef")
                 .font(.system(size:16))
             Spacer()
             
@@ -17,11 +17,11 @@ struct WelcomeView: View {
                     currentPage += 1
                 }
             }) {
-                Text("Sign Up")
+                Text("get started")
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color.orange)
+                    .background(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0))
                     .cornerRadius(30)
             }
         }

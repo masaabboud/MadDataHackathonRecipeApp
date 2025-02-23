@@ -7,6 +7,7 @@ struct AllergyPreferenceView: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
+            Spacer()
             Text("Do you have any\nallergies?")
                 .font(.system(size: 30, weight: .bold))
                 .multilineTextAlignment(.leading)
@@ -19,7 +20,8 @@ struct AllergyPreferenceView: View {
                 AllergyButton(title: "Soy", selectedItems: $selectedAllergies)
             }
 
-            // Set Preferences Button
+            Spacer()
+            
             Button(action: {
                 isOnboardingShowing = false
                 print("Allergies set to: \(selectedAllergies.joined(separator: ", "))")
@@ -29,7 +31,7 @@ struct AllergyPreferenceView: View {
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.orange)
+                    .background(Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0))
                     .cornerRadius(30)
             }
             .padding(.horizontal, 40)
@@ -54,7 +56,7 @@ struct AllergyButton: View {
             Text(title)
                 .padding(.horizontal, 20)
                 .padding(.vertical, 10)
-                .background(selectedItems.contains(title) ? Color.gray.opacity(0.3) : Color.clear)
+                .background(selectedItems.contains(title) ? Color(red: 0x00 / 255.0, green: 0x46 / 255.0, blue: 0x18 / 255.0).opacity(0.3) : Color.clear)
                 .cornerRadius(20)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)

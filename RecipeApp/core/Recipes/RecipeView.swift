@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct RecipeView: View {
+    @StateObject private var viewModel = RecipeViewModel()  // Use the view model for data binding
     @State private var selectedCuisine: String? = nil
     @State private var ingredients: [String] = []
     @State private var newIngredient: String = ""
-    @State private var recipeRecommendation: String = ""
     
     var cuisines = ["Mexican", "Italian", "Indian", "Chinese"]
     
@@ -55,7 +55,7 @@ struct RecipeView: View {
             Button(action: {
                 generateRecipe()
             }) {
-                Text("create my recipe")
+                Text("Create my recipe")
                     .foregroundColor(.white)
                     .padding()
                     .frame(maxWidth: .infinity)
@@ -63,8 +63,9 @@ struct RecipeView: View {
                     .cornerRadius(30)
             }
             
-            if !recipeRecommendation.isEmpty {
-                Text("Recommended Recipe: \(recipeRecommendation)")
+            // Display the generated recipe
+            if let recipe = viewModel.generatedRecipe {
+                Text("Recommended Recipe: \(recipe)")
                     .font(.headline)
                     .padding()
             }
@@ -75,7 +76,16 @@ struct RecipeView: View {
     }
     
     func generateRecipe() {
-        recipeRecommendation = "taco"
+        // Combine selected cuisine and ingredients to send to the backend
+        guard let cuisine = selectedCuisine else {
+            viewModel.generatedRecipe = "Please select a cuisine."
+            return
+        }
+        
+        let ingredientsString = ingredients.joined(separator: ", ")
+        
+        // Call the view model's generateRecipe method to request the recipe
+        viewModel.generateRecipe(preferences: "\(cuisine), \(ingredientsString)")
     }
 }
 
@@ -84,4 +94,3 @@ struct RecipeView_Previews: PreviewProvider {
         RecipeView()
     }
 }
-

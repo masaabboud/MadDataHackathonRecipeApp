@@ -7,16 +7,16 @@ struct RecipeView: View {
     @State private var newIngredient: String = ""
     @State private var navigateToRecipe = false
     @State private var userPrompt: String = ""  // Store the prompt
-
+    
     let cuisines = ["Mexican", "Italian", "Indian", "Chinese"]
-
+    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 20) {
                 Text("What type of cuisine do you want?")
                     .font(.title)
                     .bold()
-
+                
                 HStack {
                     ForEach(cuisines, id: \.self) { cuisine in
                         Button(action: {
@@ -31,7 +31,7 @@ struct RecipeView: View {
                         }
                     }
                 }
-
+                
                 
                 Spacer()
                 
@@ -41,7 +41,7 @@ struct RecipeView: View {
                 
                 Spacer()
                 
-
+                
                 HStack {
                     TextField("Add ingredient", text: $newIngredient)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -58,7 +58,7 @@ struct RecipeView: View {
                             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth: 1))
                     }
                 }
-
+                
                 List(ingredients, id: \.self) { ingredient in
                     Text(ingredient)
                 }
@@ -66,7 +66,7 @@ struct RecipeView: View {
                 .listRowBackground(Color.white)
                 .scrollContentBackground(.hidden)
                 
-
+                
                 Button(action: {
                     let preferences = (selectedCuisine ?? "") + ", " + ingredients.joined(separator: ", ")
                     userPrompt = preferences  // Store the user's prompt
@@ -80,7 +80,7 @@ struct RecipeView: View {
                         .cornerRadius(30)
                 }
                 .padding(.top, 10)
-
+                
                 if let generatedRecipe = viewModel.generatedRecipe {
                     NavigationLink(
                         destination: RecipeCardView(recipe: generatedRecipe, preferences: userPrompt),
@@ -93,26 +93,11 @@ struct RecipeView: View {
                         navigateToRecipe = true
                     }
                 }
-
+                
                 Spacer()
             }
             .padding()
         }
     }
     
-    func createRecipe() {
-        recipe = Recipe(
-            name: "Custom Recipe",
-            ingredients: ingredients.isEmpty ? ["Ingredient 1", "Ingredient 2"] : ingredients,
-            directions: ["Step 1: Prep ingredients", "Step 2: Cook", "Step 3: Serve"]
-        )
-    }
-}
-
-struct Recipe: Identifiable {
-    let id = UUID()
-    let name: String
-    let ingredients: [String]
-    let directions: [String]
-
 }

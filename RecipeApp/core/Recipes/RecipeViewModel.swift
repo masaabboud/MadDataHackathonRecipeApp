@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 struct Recipe: Identifiable, Codable {
     let id = UUID()

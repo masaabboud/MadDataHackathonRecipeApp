@@ -2,7 +2,7 @@ import SwiftUI
 
 struct RecipeCardView: View {
     let recipe: Recipe
-    let preferences: String  // Add preferences string
+    let preferences: String? = nil
 
     var body: some View {
         ScrollView {
@@ -10,7 +10,7 @@ struct RecipeCardView: View {
                 Text("Your Prompt:")
                     .font(.headline)
                     .foregroundColor(.gray)
-                Text(preferences)
+                Text(preferences ?? "")
                     .font(.body)
                     .italic()
                     .padding(.bottom, 10)

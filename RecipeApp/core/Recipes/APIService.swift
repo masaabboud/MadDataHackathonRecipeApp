@@ -40,7 +40,7 @@ class APIService {
     }
     
     // Generate a recipe based on user preferences
-    func generateRecipe(preferences: String, completion: @escaping (Recipe?) -> Void) {
+    func generateRecipe(preferences: String? = nil, completion: @escaping (Recipe?) -> Void) {
         let url = URL(string: "\(baseURL)/generate_recipe")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -62,7 +62,7 @@ class APIService {
                 
                 // Splitting the response into structured components (you might need to refine this based on the actual response format)
                 let lines = generatedRecipeText.components(separatedBy: "\n")
-                let name = lines.first ?? "Generated Recipe"
+                let name = lines.first ?? ""
                 let ingredients = lines.filter { $0.contains("-") }.map { $0.replacingOccurrences(of: "-", with: "").trimmingCharacters(in: .whitespaces) }
                 let directions = lines.filter { $0.contains("Step") }
                

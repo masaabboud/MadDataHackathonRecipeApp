@@ -83,7 +83,7 @@ struct RecipeView: View {
                 
                 if let generatedRecipe = viewModel.generatedRecipe {
                     NavigationLink(
-                        destination: RecipeCardView(recipe: generatedRecipe, preferences: userPrompt),
+                        destination: RecipeCardView(recipe: generatedRecipe),
                         isActive: $navigateToRecipe
                     ) {
                         EmptyView()

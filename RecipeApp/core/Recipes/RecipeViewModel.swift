@@ -23,8 +23,8 @@ class RecipeViewModel: ObservableObject {
         }
     }
     
-    func generateRecipe(preferences: String) {
-        apiService.generateRecipe(preferences: preferences) { [weak self] response in
+    func generateRecipe(preferences: String? = nil) {
+        apiService.generateRecipe(preferences: preferences ?? "") { [weak self] response in
             DispatchQueue.main.async {
                 if let recipe = response {
                     self?.generatedRecipe = recipe
@@ -35,11 +35,10 @@ class RecipeViewModel: ObservableObject {
         }
     }
     
-    // Convert API response into a Recipe model
     private func parseGeneratedRecipe(_ response: String) {
         let lines = response.components(separatedBy: "\n").filter { !$0.isEmpty }
         
-        var name = "Generated Recipe"
+        var name = ""
         var ingredients: [String] = []
         var directions: [String] = []
         var section: String? = nil

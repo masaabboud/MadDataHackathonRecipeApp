@@ -6,6 +6,7 @@ struct RecipeComponent: View {
 
     var body: some View {
         NavigationLink(destination: RecipeCardView(recipe: recipe)) {
+
             VStack(spacing: 12) {
                 Image(image)
                     .resizable()

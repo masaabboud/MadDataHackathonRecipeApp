@@ -53,6 +53,7 @@ struct RecipeCardView: View {
 
                             
                         }
+
                     }
                     .padding(20)
                     if currentTab == 0{
